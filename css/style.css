@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.front_card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    background-image: linear-gradient(hsl(213, 19%, 18%),hsl(216, 12%, 10%));
+    padding: 30px;
+    border-radius: 25px;
+    visibility: visible;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #262e38;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+}
+
+.text h2 {
+    color: white;
+    margin-top: 30px; 
+    letter-spacing: 1px;
+}
+
+.text p {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+.button_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.button{
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:#262e38;
+    color:hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    color: white;
+    background-color:hsl(25, 97%, 53%);
+    transition: all 0.5s;
+}
+
+.button:focus {
+    color: white;
+    background-color:hsl(217, 12%, 63%);
+}
+
+.submit {
+	color: white;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    height: 40px;
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    border-radius: 100px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+
+.submit:hover {
+    color:hsl(25, 97%, 53%);
+    background-color:white;
+    transition: all 0.5s;
+}
+
+.back_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    background-image: linear-gradient(hsl(213, 19%, 18%),hsl(216, 12%, 10%));
+    padding: 30px;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.back_card img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 30px; 
+}
+
+.final_rating {
+    background-color:#262e38;
+    color:hsl(25, 97%, 53%);
+    padding: 0 20px;
+    border-radius: 100px;
+    padding: 7px 18px;
+}
+
+.ty_text h1 {
+    color: white;
+    margin: 30px 0 10px 0;
+}
+
+.ty_text p {
+    font-family: 15px;
+    color:hsl(217, 12%, 63%);
+    margin: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+footer {
+    text-align: center;
+}
+  
+footer .attribution {
+    color: white;
+}
+  
+footer .attribution a {
+    color: #fb7413;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+  
+footer .attribution a:hover {
+    color: #959eac;
+    transition: all 0.5s;
+}
